@@ -1,3 +1,7 @@
+#Yanira Manzano
+#04/17/2020
+#Assignment 11
+
 import random
 import Search_Method
 import time
