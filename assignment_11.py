@@ -42,28 +42,36 @@ while choice != 6:
     elif choice == 2:
         print("You have selected a Selection Sort!")
         qty = fill_list()
+        start_time = time.time()
         my_list = Search_Method.selection_sort(my_list)
+        print(f"** It takes {(time.time() - start_time)} seconds to complete a Selection Sort with {qty} values **")
         print("\nAfter sorting the list with Selection Sort, the list looks like the following:")
         print(my_list)
 
     elif choice == 3:
         print("You have selected a Insertion Sort!")
         qty = fill_list()
+        start_time = time.time()
         my_list = Search_Method.insertion_sort(my_list)
+        print(f"** It takes {(time.time() - start_time)} seconds to complete an Insertion Sort with {qty} values **")
         print("\nAfter sorting the list with Insertion Sort, the list looks like the following:")
         print(my_list)
 
     elif choice == 4:
         print("You have selected a Merge Sort!")
         qty = fill_list()
+        start_time = time.time()
         my_list = Search_Method.merge_sort(my_list)
+        print(f"** It takes {(time.time() - start_time)} seconds to complete a Merge Sort with {qty} values **")
         print("\nAfter sorting the list with Merge Sort, the list looks like the following:")
         print(my_list)
 
     elif choice == 5:
         print("You have selected a Quick Sort!")
         qty = fill_list()
+        start_time = time.time()
         my_list = Search_Method.quick_sort(my_list)
+        print(f"** It takes {(time.time() - start_time)} seconds to complete a Quick Sort with {qty} values **")
         print("\nAfter sorting the list with Quick Sort, the list looks like the following:")
         print(my_list)
 
@@ -72,3 +80,4 @@ while choice != 6:
 
     else:
         print("You have entered an invalid menu option!\n")
+
